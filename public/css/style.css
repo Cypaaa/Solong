@@ -1,0 +1,92 @@
+:root {
+    --bandColor: #202020;
+    --blue: rgb(0, 68, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 100wh;
+    overflow-x: hidden;
+    font-family: 'Arial', sans-serif;;
+    font-size: 14px;
+    background-color: #fff;
+    -webkit-user-select: none; /* a desactiver sur les titres */
+    user-select: none; /* a desactiver sur les titres */
+}
+
+header {
+    z-index: 99;
+    height: 80px;
+    color: #fff;
+    background: var(--bandColor);
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    padding: 32px 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+header a:hover {
+    color: var(--blue);
+}
+
+header a#logo {
+    padding: 0 20px;
+}
+
+header > div#profil a {
+    padding: 32px 10px;
+}
+
+header > a > img {
+    height: 50px;
+    box-sizing: border-box;
+    margin-left: 20px;
+}
+
+header > nav {
+    margin-left: auto;
+}
+
+header > nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header > hr {
+    width: 0px;
+    height: 18px;
+    margin: 0 10px;
+}
+
+header > div#profil {
+    margin: 0 13px;
+    display: flex;
+    align-items: center;
+}
+
+header > div#profil > img {
+    cursor: pointer;
+    width: 41px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+
+footer {
+    height: 200px;
+    color: #fff;
+    background-color: var(--bandColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
